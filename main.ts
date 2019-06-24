@@ -94,8 +94,8 @@ namespace grove {
     const joystickEventID = 3101;
     let lastGesture = GroveGesture.None;
     let lastJoystick = GroveJoystickKey.None;
-    let joystick: GroveJoystick = undefined;
-    let paj7620: PAJ7620 = undefined;
+    let joystick = new GroveJoystick();
+    let paj7620 = new PAJ7620();
     let distanceBackup: number = 0;
     /**
      * Do something when a gesture is detected by Grove - Gesture
